@@ -73,7 +73,7 @@ export default class PinchZoomView extends Component {
   };
 
   _handlePanResponderEnd = (e, gestureState) => {
-    if(this.state.scale < 1.05){
+    if(this.state.scale < 1.1){
       this.setState({
         offsetX: 0,
         offsetY: 0,
