@@ -108,7 +108,7 @@ export default class PinchZoomView extends Component {
       }
     }
     // translate
-    else if (gestureState.numberActiveTouches === 1) {
+    else if (this.state.scale > 1.1 && gestureState.numberActiveTouches === 1) {
       if (this.state.lastMovePinch) {
         gestureState.dx = 0;
         gestureState.dy = 0;
